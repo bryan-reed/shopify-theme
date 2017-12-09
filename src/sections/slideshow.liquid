@@ -1,0 +1,30 @@
+<div id="slideshow-section" class="grid--uniform">
+	{{'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg'}}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Slideshow",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Slideshow"
+      },
+      {
+        "id": "collection",
+        "type": "collection",
+        "label": "Collection"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slideshow",
+        "category": "Collection"
+      }
+    ]
+  }
+
+{% endschema %}
